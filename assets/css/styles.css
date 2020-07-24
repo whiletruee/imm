@@ -54,10 +54,16 @@ header > nav.navbar #navbarCollapse{
 	color: #006341;
 }
 
+header > nav.navbar #navbarCollapse a.btn{
+    margin-right: 2%;
+    margin-left: 0;
+}
 
+@media (min-width: 768px) {
 header > nav.navbar #navbarCollapse a.btn{
     margin-right: 2%;
     margin-left: 6%;
+}
 }
 
 header > nav.navbar #navbarCollapse a.btn.primary-bg{
@@ -81,10 +87,19 @@ main section.program-highlights .media .highlight-btn:hover{
     color: #006341;
 }
 
-/*testimonial section*/
+/* testimonial section */
 main section.testimonial-section{
     width: auto;
 }
+
+
+
+/* courses section */
+main section.courses-section{
+    width: auto;
+}
+
+
 
 /*faculty section*/
 
@@ -94,7 +109,6 @@ main section.faculty-section{
 
 /*video section*/
 main section.video-section > article{
-    padding-top: 2em;
     padding-bottom: 3em;
 }
 
@@ -132,9 +146,22 @@ footer.container-fluid div.footer-nav > a >i{
 }
 
 .owl-carousel.main-carousel .owl-stage-outer, .owl-item{
-    height: 75vh;
+    height: 50vh;
 }
 
+.highlights-image{
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.owl-carousel.main-carousel .owl-stage-outer, .owl-item{
+	    height: 75vh;
+	}
+
+	.highlights-image{
+		display: block;
+	}
+}
 
 .owl-carousel.courses-carousel .owl-stage-outer, .owl-item{
     max-height: 400px;
