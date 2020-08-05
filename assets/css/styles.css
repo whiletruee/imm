@@ -41,6 +41,14 @@ nav.navbar > a.navbar-brand > img{
 	max-height: 64px;
 }
 
+/* tablets*/
+@media (min-width: 576px){ 
+	nav.navbar > a.navbar-brand > img{
+		max-height: 45px;
+	}
+}
+
+
 header > nav.navbar #navbarCollapse{
     font-size: 1.25rem;
 }
@@ -60,10 +68,16 @@ header > nav.navbar #navbarCollapse a.btn{
 }
 
 @media (min-width: 768px) {
-header > nav.navbar #navbarCollapse a.btn{
-    margin-right: 2%;
-    margin-left: 6%;
-}
+
+
+	main section.program-highlights .media .highlight-para{
+		/*padding-right: 45% !important;*/
+		line-height: 2.5;
+	}
+	header > nav.navbar #navbarCollapse a.btn{
+	    margin-right: 2%;
+	    margin-left: 6%;
+	}
 }
 
 header > nav.navbar #navbarCollapse a.btn.primary-bg{
@@ -72,9 +86,23 @@ header > nav.navbar #navbarCollapse a.btn.primary-bg{
 
 /*program highlights section*/
 
+main section.program-highlights .polygon-overlay{
+	clip-path: polygon(0 0, 73% 0%, 95% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 73% 0%, 95% 100%, 0% 100%);
+	position: absolute;
+	height: 100%;
+	width: 32%;
+	left: 0;
+	top: 0;
+	background: url('../../assets/images/program-highlights.jpg');
+	z-index: 9;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 main section.program-highlights .media .highlight-para{
-	padding-right: 45% !important;
-	line-height: 2.5;
+	line-height: 1.5;
 }
 
 main section.program-highlights .media .highlight-btn{
@@ -90,9 +118,47 @@ main section.program-highlights .media .highlight-btn:hover{
 /* testimonial section */
 main section.testimonial-section{
     width: auto;
+    background-color: #e9ecef;
+    margin-top: -1.5rem;
+}
+
+@media (min-width: 768px) {
+	main section.testimonial-section{
+	    background-color: transparent;
+	}
+}
+
+main section.testimonial-section .user-img{
+	position: absolute;
+	width: 6rem;
+	height: 6rem;
+	background-color: #000;
+	left:2rem;
+	border-radius: 50%;
+	background:url(../../assets/images/testimonial1.jpg);
+	background-size: contain;
+}
+
+@media (min-width: 576px) {
+	main section.testimonial-section .user-img{
+		width: 8rem;
+		height: 8rem;
+	}
 }
 
 
+
+@media (min-width: 768px) {
+	main section.testimonial-section .user-img{
+		width: 10rem;
+		height: 10rem;
+		left:-5rem;
+	}
+}
+
+main section.testimonial-section blockquote p{
+	font-size: 1.6rem;
+}
 
 /* courses section */
 main section.courses-section{
@@ -113,9 +179,22 @@ main section.video-section > article{
 }
 
 main section.video-section > article > iframe{
-	margin: 0 auto;
-	width: 60vw;
-    height: 50vh;
+	width: 85vw;
+    height: 35vh;
+}
+
+@media (min-width: 768px) {
+	main section.video-section > article > iframe{
+		width: 80vw;
+	    height: 40vh;
+	}
+}
+
+@media (min-width: 1000px) {
+	main section.video-section > article > iframe{
+		width: 85vw;
+	    height: 50vh;
+	}
 }
 
 /*footer*/
@@ -145,21 +224,24 @@ footer.container-fluid div.footer-nav > a >i{
 	margin-top: 90px;
 }
 
+@media(min-width: 576px) {
+	.owl-carousel.main-carousel{
+		margin-top: 70px;
+	}
+}
+
+
+.owl-carousel.main-carousel img{
+	height: inherit;
+	object-fit: cover;
+}
+
 .owl-carousel.main-carousel .owl-stage-outer, .owl-item{
     height: 50vh;
 }
-
-.highlights-image{
-	display: none;
-}
-
 @media (min-width: 768px) {
 	.owl-carousel.main-carousel .owl-stage-outer, .owl-item{
 	    height: 75vh;
-	}
-
-	.highlights-image{
-		display: block;
 	}
 }
 
@@ -179,6 +261,11 @@ footer.container-fluid div.footer-nav > a >i{
 	max-height: 400px;
 }
 
+.owl-carousel.courses-carousel img{
+	height: inherit;
+	object-fit: cover;
+}
+
 .owl-carousel .item .content{
 	position: absolute;
     z-index: 9;
@@ -188,6 +275,10 @@ footer.container-fluid div.footer-nav > a >i{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.owl-carousel .item .content h1{
+	font-size: 2rem;
 }
 
 .owl-carousel.courses-carousel  .item .content{
@@ -248,3 +339,215 @@ footer.container-fluid div.footer-nav > a >i{
     font-size: 3em;
     color: #fff;
 }
+
+
+/*HINA's  CSS*/
+
+body#portfolio main .jumbotron.head-banner, body#faculty main .jumbotron.head-banner, body#testimonial main .jumbotron.head-banner{
+    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide1.jpg");
+
+  /* Set a specific height */
+  height: 275px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;     
+}
+
+body#portfolio .overlay, body#faculty .overlay, body#testimonial .overlay{    
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #006341;
+	opacity: 0.75;
+	display: flex;
+	justify-content: center;
+}
+
+body#portfolio .jumbotron .content, body#faculty .jumbotron .content, body#testimonial .jumbotron .content{
+	position: absolute;
+    z-index: 9;
+    color: #fff;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+}
+
+
+body#portfolio .header-txt, body#faculty .header-txt, body#testimonial .header-txt{
+	text-align: center;    
+    color:white;
+    padding-top:5%;
+    opacity:100%;    
+	text-shadow: 0px 5px 5px #000;
+}
+
+body#portfolio section.container-fluid{    
+    padding:2rem 2rem 1.5rem;     
+}
+
+
+body#portfolio .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+}
+
+
+body#portfolio figure{
+    width:380px;
+    height:230px; 
+    padding-bottom: 10%;    
+}
+
+
+body#portfolio figure img.img-fluid{
+    max-width:100%;
+    width:380px;
+    height:inherit;
+    object-fit: cover;
+    object-position: top;
+    cursor: zoom-in;   
+}
+
+
+/* The Modal (background) */
+body#portfolio .modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left: 0;
+  top: 200px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+body#portfolio .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+body#portfolio .close {
+  color: white;
+  position: absolute;
+  top: 250px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body#portfolio .close:hover,
+body#portfolio .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body#portfolio .mySlides {
+  display: none;
+}
+
+body#portfolio .cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+body#portfolio .modal a{    
+    color:white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body#portfolio .prev,
+body#portfolio .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;  
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+body#portfolio .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/*
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+*/
+
+/* Number text (1/3 etc) */
+body#portfolio .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+body#portfolio img {
+  margin-bottom: -4px;
+}
+
+body#portfolio .caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+body#portfolio .demo {
+  opacity: 0.6;
+}
+
+body#portfolio .active,
+body#portfolio .demo:hover {
+  opacity: 1;
+}
+
+body#portfolio img.hover-shadow {
+  transition: 0.3s;
+}
+
+body#portfolio .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+body#portfolio .download{
+    padding-left:6rem;    
+    
+}
+body#portfolio .download a{
+    
+    background-color: #212721 !important;	
+}
+
+
+/*end of Hina's CSS*/

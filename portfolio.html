@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Interactive Media Management - Algonquin College">
+    <meta name="author" content="Hina, Chuan, Pujan, Albab">
+	<title>Interactive Media Management</title>
+
+	<!-- bootstrap library -->
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+	<!-- font awesome library -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- owl carousel library -->
+	<link rel="stylesheet" href="vendor/owlcarousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/owlcarousel/css/owl.theme.default.min.css">
+
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	
+</head>
+<body id="portfolio">
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <a class="navbar-brand mr-md-0" href="#">
+            <img src="assets/images/logo.jpg" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto px-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html#">Portfolio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faculty.html">Faculty</a>
+            </li>
+          </ul>
+          <a class="btn btn-success primary-bg my-2 my-md-0 ml-3 ml-md-0" href="https://www.algonquincollege.com/mediaanddesign/program/imm">Apply Now</a>
+          
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+<!--    Banner section -->
+   
+    <section class="jumbotron head-banner">
+        <div>
+            <div class="overlay"></div>
+		    <div class="content">
+		      <h1 class="header-txt">Portfolio<br>		  										  		
+		      </h1>
+		    </div>
+        </div>    	
+     </section>
+       
+<!--  End of Banner section      -->
+
+<!--   Introduction and Icons section-->
+    
+     <section class="container-fluid">            
+        <div class="row ml-5">
+            <div class="col-lg-7">
+				<h1 class="primary-color">IMM Student's Work</h1>
+				<p>
+                   In the one-year Interactive Media Management Ontario College Graduate Certificate program, you develop the hands-on skills to plan and develop websites, online media and dynamic content. While learning industry standard practices, you gain the solid foundation in interactive media that you need to further your career in today`s dynamic job market.
+                </p>
+                <p>
+                    Throughout the program, as you apply your skills on solo projects and team-based applications for a wide variety of users and audiences, you may deal with regional, national and international clients.  
+                </p>
+            </div>
+            <div class="col-lg-4 offset-lg-1 pl-5">					    
+                <img src="assets/images/portfolio/icons-portfolio.png" class="img-fluid" alt="icons" style="padding-top: 50px; text-align: center width:350px; height:245px">
+					    
+            </div>
+        </div>
+     </section>
+     
+<!--  End of Introduction and Icons section     -->
+       
+<!--  Buttons section-->
+                  
+      <section class="container-fluid">
+        <div class="row mt-0 mr-0 pr-0">
+            <!-- Grid column -->
+            <div class="col-md-12 d-flex justify-content-center mb-5" "style: margin=0">
+
+            <button type="button" class="btn btn-outline-black waves-effect filter primary-bg tertiary-color" data-rel="all">All</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter mx-2" data-rel="1">Web Designs</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter mx-2" data-rel="2">Visuals</button>
+            <button type="button" class="btn btn-outline-black waves-effect filter mx-2" data-rel="3">Videography</button>
+
+            </div>
+              <!-- Grid column -->
+
+         </div>
+            <!-- Grid row -->
+        </section>
+       
+<!--  End of Buttons section      -->
+     
+<!-- Gallery section -->
+             
+        <section class="container" id="gallery" style="margin-bottom: 100px;">
+          <div class="row">   
+               
+            <!--  Web Design images               -->               
+            <figure class="col-md-4 all 1">
+                <img class="img-fluid" src="assets/images/portfolio/web-design-01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </figure>
+             
+            <figure class="col-md-4 all 1">
+                <img class="img-fluid" src="assets/images/portfolio/web-design-02.jpg"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </figure>
+              
+            <figure class="col-md-4 all 1">
+                <img class="img-fluid" src="assets/images/portfolio/web-design-03.jpg"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </figure>
+              
+            <figure class="col-md-4 all 1">
+                <img class="img-fluid" src="assets/images/portfolio/web-design-04.jpg"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </figure>              
+            <!--    end of Web Design images      -->       
+       
+            <!--     Visual images                -->
+               
+            <figure class="col-md-4 all 2">
+                <img class="img-fluid" src="assets/images/portfolio/visual-01.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </figure>
+             
+            <figure class="col-md-4 all 2">
+                <img class="img-fluid" src="assets/images/portfolio/visual-02.jpg"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </figure>
+              
+            <figure class="col-md-4 all 2">
+                <img class="img-fluid" src="assets/images/portfolio/visual-03.jpg"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </figure>
+              
+            <figure class="col-md-4 all 2">
+                <img class="img-fluid" src="assets/images/portfolio/visual-04.jpg"  onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </figure>
+              
+            <!--    end of Visual images          -->       
+       
+       
+            <!--    Videography images            -->
+               
+            <figure class="col-md-4 all 3">
+                <img class="img-fluid" src="assets/images/portfolio/video-01.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </figure>
+             
+            <figure class="col-md-4 all 3">
+                <img class="img-fluid" src="assets/images/portfolio/video-02.jpg"  onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </figure>
+              
+            <figure class="col-md-4 all 3">
+                <img class="img-fluid" src="assets/images/portfolio/video-03.jpg"  onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            </figure>
+              
+            <figure class="col-md-4 all 3">
+                <img class="img-fluid" src="assets/images/portfolio/video-04.jpg"  onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            </figure>
+              
+            <!--    end of Videography images     -->       
+          </div>       
+        </section>
+        
+        <!-- cta -->
+        <footer class="container-fluid primary-bg">
+            <h3 class="text-white p-3 px-md-5 d-flex align-items-center">Download the program overview PDF
+                <a class="btn btn-dark secondary-bg ml-auto" href="https://www.algonquincollege.com/mediaanddesign/program/imm">DOWNLOAD NOW</a>
+            </p>
+
+        </footer>
+
+      <!-- FOOTER -->
+        <footer class="container-fluid secondary-bg py-5 px-4">
+            <img src="assets/images/footer-logo.png" class="img-fluid mb-4" alt="Footer Logo">
+            <div class="row">
+                <div class="col-6 col-md-5">
+                    <p class="tertiary-color">The Algonquin College School of Media and Design is an innovative and forward-thinking learning environment that fosters independent decision-making, self-expression, technology, and teamwork; taught by experts in their industries and matched with real-word projects and real clients.</p>
+                </div>
+                <div class="col-2 d-none d-md-block col-md-2"></div>
+                <div class="col-6 footer-nav col-md-5">
+                    <ul>
+                        <li><a href="#" class="tertiary-color float-right">Home</a></li>
+                        <li><a href="#" class="tertiary-color float-right">Portfolio</a></li>
+                        <li><a href="#" class="tertiary-color float-right">Testimonials</a></li>
+                        <li><a href="#" class="tertiary-color float-right">Faculty</a></li>
+                    </ul>
+                    <a href="#" class="tertiary-color float-right"><i class="fa fa-phone"></i></a>
+                    <a href="#" class="tertiary-color float-right"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+            
+        </footer>
+    </main>
+<!-- End of main-->
+    
+<!--    Start of Modal -->
+
+    <div id="myModal" class="modal" style="z-index:9999;">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+           
+            <div class="mySlides">
+                <div class="numbertext">1 / 12</div>
+                <img src="assets/images/portfolio/web-design-01.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">2 / 12</div>
+                <img src="assets/images/portfolio/web-design-02.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">3 / 12</div>
+                <img src="assets/images/portfolio/web-design-03.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides">
+                <div class="numbertext">4 / 12</div>
+                <img src="assets/images/portfolio/web-design-04.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">5 / 12</div>
+                <img src="assets/images/portfolio/visual-01.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">6 / 12</div>
+                <img src="assets/images/portfolio/visual-02.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">7 / 12</div>
+                <img src="assets/images/portfolio/visual-03.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">8 / 12</div>
+                <img src="assets/images/portfolio/visual-04.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">9 / 12</div>
+                <img src="assets/images/portfolio/video-01.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">10 / 12</div>
+                <img src="assets/images/portfolio/video-02.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">11 / 12</div>
+                <img src="assets/images/portfolio/video-03.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">12 / 12</div>
+                <img src="assets/images/portfolio/video-04.jpg" style="width:100%">
+            </div>                
+    
+            <a class="prev" onclick="plusSlides(-1)" style="color:white; background-color:rgba(0, 0, 0, 0.8;)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" style="color:white; background-color:rgba(0, 0, 0, 0.8;)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>    
+        </div>            
+    </div>
+
+<!-- End of Modal-->
+
+	<!-- jquery -->
+	<script src="vendor/jquery/jquery-3.5.1.min.js"></script>
+
+	<!-- bootstrap 4 -->
+	<script src="vendor/popper/popper.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- owl carousel -->
+	<script type="text/javascript" src="vendor/owlcarousel/js/owl.carousel.min.js"></script>
+
+	<!-- custom script -->
+	<script type="text/javascript" src="assets/js/script.js"></script>	
+	
+</body>
+</html>
