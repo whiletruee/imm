@@ -238,27 +238,27 @@ footer.container-fluid div.footer-nav > a >i{
 
 
 
-.owl-carousel.main-carousel .owl-stage-outer, .owl-item{
+.owl-carousel.main-carousel .owl-stage-outer .owl-item{
     height: 50vh;
 }
 @media (min-width: 768px) {
-	.owl-carousel.main-carousel .owl-stage-outer, .owl-item{
+	.owl-carousel.main-carousel .owl-stage-outer .owl-item{
 	    height: 75vh;
 	}
 }
 
 
 
-.owl-carousel.banner-carousel .owl-stage-outer, .owl-item{
+.owl-carousel.banner-carousel .owl-stage-outer .owl-item{
     height: 20vh;
 }
 @media (min-width: 768px) {
-	.owl-carousel.banner-carousel .owl-stage-outer, .owl-item{
+	.owl-carousel.banner-carousel .owl-stage-outer .owl-item{
 	    height: 25vh;
 	}
 }
 
-.owl-carousel.courses-carousel .owl-stage-outer, .owl-item{
+.owl-carousel.courses-carousel .owl-stage-outer .owl-item{
     max-height: 400px;
 }
 
