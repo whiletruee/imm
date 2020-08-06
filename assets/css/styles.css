@@ -41,12 +41,7 @@ nav.navbar > a.navbar-brand > img{
 	max-height: 64px;
 }
 
-/* tablets*/
-@media (min-width: 576px){ 
-	nav.navbar > a.navbar-brand > img{
-		max-height: 45px;
-	}
-}
+
 
 
 header > nav.navbar #navbarCollapse{
@@ -67,18 +62,7 @@ header > nav.navbar #navbarCollapse a.btn{
     margin-left: 0;
 }
 
-@media (min-width: 768px) {
 
-
-	main section.program-highlights .media .highlight-para{
-		/*padding-right: 45% !important;*/
-		line-height: 2.5;
-	}
-	header > nav.navbar #navbarCollapse a.btn{
-	    margin-right: 2%;
-	    margin-left: 6%;
-	}
-}
 
 header > nav.navbar #navbarCollapse a.btn.primary-bg{
 	border-color: #006341;
@@ -122,11 +106,7 @@ main section.testimonial-section{
     margin-top: -1.5rem;
 }
 
-@media (min-width: 768px) {
-	main section.testimonial-section{
-	    background-color: transparent;
-	}
-}
+
 
 main section.testimonial-section .user-img{
 	position: absolute;
@@ -139,22 +119,7 @@ main section.testimonial-section .user-img{
 	background-size: contain;
 }
 
-@media (min-width: 576px) {
-	main section.testimonial-section .user-img{
-		width: 8rem;
-		height: 8rem;
-	}
-}
 
-
-
-@media (min-width: 768px) {
-	main section.testimonial-section .user-img{
-		width: 10rem;
-		height: 10rem;
-		left:-5rem;
-	}
-}
 
 main section.testimonial-section blockquote p{
 	font-size: 1.6rem;
@@ -183,19 +148,6 @@ main section.video-section > article > iframe{
     height: 35vh;
 }
 
-@media (min-width: 768px) {
-	main section.video-section > article > iframe{
-		width: 80vw;
-	    height: 40vh;
-	}
-}
-
-@media (min-width: 1000px) {
-	main section.video-section > article > iframe{
-		width: 85vw;
-	    height: 50vh;
-	}
-}
 
 /*footer*/
 footer.container-fluid{
@@ -224,11 +176,6 @@ footer.container-fluid div.footer-nav > a >i{
 	margin-top: 90px;
 }
 
-@media(min-width: 576px) {
-	.owl-carousel.main-carousel{
-		margin-top: 70px;
-	}
-}
 
 
 .owl-carousel.main-carousel img{
@@ -241,21 +188,9 @@ footer.container-fluid div.footer-nav > a >i{
 .owl-carousel.main-carousel .owl-stage-outer .owl-item{
     height: 50vh;
 }
-@media (min-width: 768px) {
-	.owl-carousel.main-carousel .owl-stage-outer .owl-item{
-	    height: 75vh;
-	}
-}
-
-
 
 .owl-carousel.banner-carousel .owl-stage-outer .owl-item{
     height: 20vh;
-}
-@media (min-width: 768px) {
-	.owl-carousel.banner-carousel .owl-stage-outer .owl-item{
-	    height: 25vh;
-	}
 }
 
 .owl-carousel.courses-carousel .owl-stage-outer .owl-item{
@@ -363,23 +298,7 @@ footer.container-fluid div.footer-nav > a >i{
     height: 175px;
 }
 
-@media (min-width: 576px){
 
-	.head-banner{
-		margin-top: 65px;
-	    height: 255px;
-	}
-}
-
-
-
-@media (min-width: 900){
-
-	.head-banner{
-		margin-top: 35px;
-	    height: 255px;
-	}
-}
 
 /*HINA's  CSS*/
 
@@ -444,13 +363,6 @@ body#portfolio figure{
     padding-bottom: 10%;    
 }
 
-@media (min-width: 768px){
-	body#portfolio figure{
-	    width:380px;
-	    height:230px; 
-	    padding-bottom: 10%;    
-	}
-}
 
 
 body#portfolio figure img.img-fluid{
@@ -600,3 +512,80 @@ body#portfolio .download a{
 
 
 /*end of Hina's CSS*/
+
+@media (min-width: 576px){
+
+	.head-banner{
+		margin-top: 65px;
+	    height: 255px;
+	}
+
+	nav.navbar > a.navbar-brand > img{
+		max-height: 45px;
+	}
+
+	main section.testimonial-section .user-img{
+		width: 8rem;
+		height: 8rem;
+	}
+
+
+	.owl-carousel.main-carousel{
+		margin-top: 70px;
+	}
+}
+
+
+@media (min-width: 768px) {
+
+
+	main section.program-highlights .media .highlight-para{
+		/*padding-right: 45% !important;*/
+		line-height: 2.5;
+	}
+	header > nav.navbar #navbarCollapse a.btn{
+	    margin-right: 2%;
+	    margin-left: 6%;
+	}
+	main section.testimonial-section{
+	    background-color: transparent;
+	}
+	main section.testimonial-section .user-img{
+		width: 10rem;
+		height: 10rem;
+		left:-5rem;
+	}
+	main section.video-section > article > iframe{
+		width: 80vw;
+	    height: 40vh;
+	}
+	.owl-carousel.main-carousel .owl-stage-outer .owl-item{
+	    height: 75vh;
+	}
+	.owl-carousel.banner-carousel .owl-stage-outer .owl-item{
+	    height: 25vh;
+	}
+	body#portfolio figure{
+	    width:380px;
+	    height:230px; 
+	    padding-bottom: 10%;    
+	}
+}
+
+@media (min-width: 900px){
+
+	.head-banner{
+		margin-top: 35px;
+	    height: 255px;
+	}
+}
+
+
+
+@media (min-width: 1000px) {
+	main section.video-section > article > iframe{
+		width: 85vw;
+	    height: 50vh;
+	}
+}
+
