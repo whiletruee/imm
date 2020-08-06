@@ -1,0 +1,230 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #fff;
+	color: #212721;
+}
+
+.primary-color{
+	color: #006341 !important;	/*green*/
+}
+
+.secondary-color{
+	color: #212721 !important;	/*black*/
+}
+
+.tertiary-color{
+	color: #F8F9F8 !important;	/*gray*/
+}
+
+.primary-bg{
+	background-color: #006341 !important;	/*green*/
+}
+
+.secondary-bg{
+	background-color: #212721 !important;	/*dark gray (almost black)*/
+}
+
+.tertiary-bg{
+	background-color: #F8F9F8 !important;	/*gray*/
+}
+
+header > nav.navbar{
+	background-color: #fff !important;
+	color: #006341;
+	box-shadow: 0 0 2px #212721;
+}
+
+nav.navbar > a.navbar-brand > img{
+	max-height: 64px;
+}
+
+header > nav.navbar #navbarCollapse{
+    font-size: 1.25rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: #212721;
+	font-weight: 500;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+	color: #006341;
+}
+
+
+header > nav.navbar #navbarCollapse a.btn{
+    margin-right: 2%;
+    margin-left: 6%;
+}
+
+header > nav.navbar #navbarCollapse a.btn.primary-bg{
+	border-color: #006341;
+}
+
+/*program highlights section*/
+
+main section.program-highlights .media .highlight-para{
+	padding-right: 45% !important;
+	line-height: 2.5;
+}
+
+main section.program-highlights .media .highlight-btn{
+	border: 0;
+	padding-left: 0;
+}
+
+main section.program-highlights .media .highlight-btn:hover{
+	background-color: transparent;
+    color: #006341;
+}
+
+/*testimonial section*/
+main section.testimonial-section{
+    width: auto;
+}
+
+/*faculty section*/
+
+main section.faculty-section{
+    background-color: #F4F4F4;
+}
+
+/*video section*/
+main section.video-section > article{
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+main section.video-section > article > iframe{
+	margin: 0 auto;
+	width: 60vw;
+    height: 50vh;
+}
+
+/*footer*/
+footer.container-fluid{
+    padding: 3% 2%;
+}
+
+footer.container-fluid >img{
+	max-height: 50px;
+	margin-bottom: 2%;
+}
+
+footer.container-fluid div.footer-nav a{
+	text-transform: uppercase;
+}
+
+footer.container-fluid div.footer-nav > a{
+	margin: 0 2%;
+}
+
+footer.container-fluid div.footer-nav > a >i{
+	font-size: 1.25em;
+}
+
+/*slider*/
+.owl-carousel.main-carousel{
+	margin-top: 90px;
+}
+
+.owl-carousel.main-carousel .owl-stage-outer, .owl-item{
+    height: 75vh;
+}
+
+
+.owl-carousel.courses-carousel .owl-stage-outer, .owl-item{
+    max-height: 400px;
+}
+
+.owl-carousel.main-carousel .item{
+	height: inherit;
+  	position: relative;
+}
+
+
+.owl-carousel.courses-carousel .item{
+	height: inherit;
+  	position: relative;
+	max-height: 400px;
+}
+
+.owl-carousel .item .content{
+	position: absolute;
+    z-index: 9;
+    color: #fff;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel.courses-carousel  .item .content{
+	max-height: 400px;
+}
+
+
+.owl-carousel .item .content > h1{
+	text-align: center;
+	text-shadow: 0px 5px 5px #000;
+}
+
+.owl-carousel .item .content > h1 > span{
+	font-weight: 800;
+}
+
+.owl-carousel .item .content > h1 > small{
+	display: block;
+    margin-top: 1em;
+    font-size: 0.6em;
+    text-shadow: none;
+}
+
+.owl-carousel .overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #006341;
+	opacity: 0.75;
+	display: flex;
+	justify-content: center;
+}
+
+.owl-carousel.courses-carousel .overlay{
+	background-color: #000000;
+	opacity: 0.5;
+	max-height: 400px;
+}
+
+.owl-carousel .overlay > h1{
+	color: #fff;align-self: center;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+	right: 2%;
+    position: absolute;
+    top: 40%;
+    font-size: 3em;
+    color: #fff;
+}
+
+.owl-carousel .owl-nav button.owl-prev{
+	left: 2%;
+    position: absolute;
+    top: 40%;
+    font-size: 3em;
+    color: #fff;
+}
+/*testimonialpage  chuan*/
+.card.testimonial-card p{
+	line-height: 1.5;
+}
+.pp{
+	height: 120px;
+}

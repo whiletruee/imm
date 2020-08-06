@@ -28,6 +28,23 @@ $(document).on('click', 'button.filter', function(){
 
 window.onload = window.onresize = function() {
 
+
+
+  let testimonials = document.querySelectorAll('.testimonial-card-body.card-body');
+  
+
+  let testimonialHeight = 0;
+  for (let i = 0; i < testimonials.length; i++) {
+    testimonials[i].style.height = "auto";
+    if(testimonialHeight < testimonials[i].offsetHeight){
+      testimonialHeight = testimonials[i].offsetHeight;
+    }
+  }
+  testimonials.forEach(function(item, index){
+
+    item.style.height = `${testimonialHeight+20}px`;
+  });
+
   let cards = document.querySelectorAll('.faculty-card-body.card-body');
   
 
