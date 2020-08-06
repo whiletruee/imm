@@ -16,6 +16,14 @@ $(document).ready(function(){
     nav : true
   });
 
+  let navbarHeight = $('nav.navbar').css('height');
+  $('.main-carousel,.banner-carousel').css('margin-top', navbarHeight);
+
+});
+
+$(document).on('click', 'button.filter', function(){
+  $('button.filter').removeClass('primary-bg tertiary-color');
+  $(this).addClass('primary-bg tertiary-color');
 });
 
 window.onload = window.onresize = function() {
