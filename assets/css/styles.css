@@ -1,3 +1,33 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:     	Interactive Media Management Website
+Client:			Algonquin College
+Version:        1
+Author:         Hina Awan, Pujan Bhatt, Chuanyu Zhang, Albab Saifi
+Team Name:      whileTrue
+
+
+
+[Table of contents]
+
+1. Globals
+2. Header
+3. Sections
+4. Footer
+5. Owl Carousel
+6. Portfolio Page
+7. Media Queries
+
+
+[Color codes]
+
+Primary Color: 		#006341;
+Secondary Color: 	#212721;
+Tertiary Color: 	#F8F9F8;
+-------------------------------------------------------------------*/
+
+/*--- Globals ---*/
 html{
 	scroll-behavior: smooth;
 }
@@ -31,6 +61,8 @@ body{
 	background-color: #F8F9F8 !important;	/*gray*/
 }
 
+/*--- Header ---*/
+
 header > nav.navbar{
 	background-color: #fff !important;
 	color: #006341;
@@ -40,9 +72,6 @@ header > nav.navbar{
 nav.navbar > a.navbar-brand > img{
 	max-height: 64px;
 }
-
-
-
 
 header > nav.navbar #navbarCollapse{
     font-size: 1.25rem;
@@ -62,13 +91,12 @@ header > nav.navbar #navbarCollapse a.btn{
     margin-left: 0;
 }
 
-
-
 header > nav.navbar #navbarCollapse a.btn.primary-bg{
 	border-color: #006341;
 }
 
-/*program highlights section*/
+/*--- Sections ---*/
+/* Program Highlights - Home page */
 
 main section.program-highlights .polygon-overlay{
 	clip-path: polygon(0 0, 73% 0%, 95% 100%, 0% 100%);
@@ -99,13 +127,12 @@ main section.program-highlights .media .highlight-btn:hover{
     color: #006341;
 }
 
-/* testimonial section */
+/* Testimonials - Home Page */
 main section.testimonial-section{
     width: auto;
     background-color: #e9ecef;
     margin-top: -1.5rem;
 }
-
 
 
 main section.testimonial-section .user-img{
@@ -120,7 +147,6 @@ main section.testimonial-section .user-img{
 }
 
 
-
 main section.testimonial-section blockquote p{
 	font-size: 1.6rem;
 }
@@ -132,13 +158,13 @@ main section.courses-section{
 
 
 
-/*faculty section*/
+/* Faculty - Home Page*/
 
 main section.faculty-section{
     background-color: #F4F4F4;
 }
 
-/*video section*/
+/* Video - Home Page */
 main section.video-section > article{
     padding-bottom: 3em;
 }
@@ -149,7 +175,7 @@ main section.video-section > article > iframe{
 }
 
 
-/*footer*/
+/*--- Footer ---*/
 footer.container-fluid{
     padding: 3% 2%;
 }
@@ -171,18 +197,15 @@ footer.container-fluid div.footer-nav > a >i{
 	font-size: 1.25em;
 }
 
-/*slider*/
+/*--- Owl Carousel ---*/
 .owl-carousel.main-carousel{
 	margin-top: 90px;
 }
-
-
 
 .owl-carousel.main-carousel img{
 	height: inherit;
 	object-fit: cover;
 }
-
 
 
 .owl-carousel.main-carousel .owl-stage-outer .owl-item{
@@ -300,7 +323,7 @@ footer.container-fluid div.footer-nav > a >i{
 
 
 
-/*HINA's  CSS*/
+/*--- Portfolio Page ---*/
 
 body#portfolio main .jumbotron.head-banner, body#faculty main .jumbotron.head-banner, body#testimonial main .jumbotron.head-banner{
     
@@ -376,8 +399,7 @@ body#portfolio figure img.img-fluid{
     border: 1px solid #eee; 
 }
 
-
-/* The Modal (background) */
+/* Modal Background */
 body#portfolio .modal {
   display: none;
   position: fixed;
@@ -401,7 +423,7 @@ body#portfolio .modal-content {
   max-width: 1200px;
 }
 
-/* The Close Button */
+/* Close Button */
 body#portfolio .close {
   color: white;
   position: absolute;
@@ -455,13 +477,6 @@ body#portfolio .next {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-/*
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-*/
 
 /* Number text (1/3 etc) */
 body#portfolio .numbertext {
@@ -511,7 +526,7 @@ body#portfolio .download a{
 }
 
 
-/*end of Hina's CSS*/
+/*--- Media Queries ---*/
 
 @media (min-width: 576px){
 
@@ -581,7 +596,6 @@ body#portfolio .download a{
 }
 
 
-
 @media (min-width: 1000px) {
 	main section.video-section > article > iframe{
 		width: 85vw;
@@ -589,3 +603,4 @@ body#portfolio .download a{
 	}
 }
 
+/* end of media queries */

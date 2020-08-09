@@ -1,37 +1,40 @@
 $(document).ready(function(){
-	$(".courses-carousel").owlCarousel({
-  	items:1,
-  	loop: true,
-  	autoplay: true,
+
+  //owl carousel
+  $(".courses-carousel").owlCarousel({
+    items:1,
+    loop: true,
+    autoplay: true,
     margin:0,
     stagePadding:0,
     nav : true
   });
 
   $(".owl-carousel").owlCarousel({
-  	items:1,
-  	loop: true,
+    items:1,
+    loop: true,
     margin:0,
     stagePadding:0,
     nav : true
   });
+  //owl carousel end
 
+  //dynamically adjust the margin of top carousel according to the navbar height
   let navbarHeight = $('nav.navbar').css('height');
   $('.main-carousel,.banner-carousel').css('margin-top', navbarHeight);
 
 });
 
+//portfolio button style toggle
 $(document).on('click', 'button.filter', function(){
   $('button.filter').removeClass('primary-bg tertiary-color');
   $(this).addClass('primary-bg tertiary-color');
 });
 
+//dynamically adjust the height of testimonials card, faculty card and faculty images
 window.onload = window.onresize = function() {
 
-
-
-  let testimonials = document.querySelectorAll('.testimonial-card-body.card-body');
-  
+  let testimonials = document.querySelectorAll('.testimonial-card-body.card-body');  
 
   let testimonialHeight = 0;
   for (let i = 0; i < testimonials.length; i++) {
@@ -83,25 +86,23 @@ window.onload = window.onresize = function() {
   });
 }
 
-/*******Hina's Code ******************/
+/*******Portfolio's Code ******************/
 
+//switching of tabs
 $(function() {
-var selectedClass = "";
-$(".filter").click(function(){
-selectedClass = $(this).attr("data-rel");
-$("#gallery").fadeTo(100, 0.1);
-$("#gallery figure").not("."+selectedClass).fadeOut().removeClass('animation');
-setTimeout(function() {
-$("."+selectedClass).fadeIn().addClass('animation');
-$("#gallery").fadeTo(300, 1);
-}, 300);
+  var selectedClass = "";
+  $(".filter").click(function(){
+    selectedClass = $(this).attr("data-rel");
+    $("#gallery").fadeTo(100, 0.1);
+    $("#gallery figure").not("."+selectedClass).fadeOut().removeClass('animation');
+    setTimeout(function() {
+      $("."+selectedClass).fadeIn().addClass('animation');
+      $("#gallery").fadeTo(300, 1);
+    }, 300);
+  });
 });
-});
 
-
-
-
-
+//modal code
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -121,6 +122,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//slider
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -139,4 +141,4 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-/*************** end of Hina's code *******************/
+/*************** end of Portfolio's code *******************/
