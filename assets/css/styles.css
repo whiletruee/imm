@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
@@ -61,12 +68,19 @@ body{
 	background-color: #F8F9F8 !important;	/*gray*/
 }
 
+button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: 0;
+}
+
 /*--- Header ---*/
 
 header > nav.navbar{
 	background-color: #fff !important;
 	color: #006341;
-	box-shadow: 0 0 2px #212721;
+	-webkit-box-shadow: 0 0 2px #212721;
+	        box-shadow: 0 0 2px #212721;
 }
 
 nav.navbar > a.navbar-brand > img{
@@ -140,7 +154,7 @@ main section.testimonial-section .user-img{
 	width: 6rem;
 	height: 6rem;
 	background-color: #000;
-	left:2rem;
+	left:0;
 	border-radius: 50%;
 	background:url(../../assets/images/testimonial1.jpg);
 	background-size: contain;
@@ -176,8 +190,13 @@ main section.video-section > article > iframe{
 
 
 /*--- Footer ---*/
+
+footer.container-fluid.cta h3{
+	font-size: 1.5rem;
+}
+
 footer.container-fluid{
-    padding: 3% 2%;
+    padding: 2%;
 }
 
 footer.container-fluid >img{
@@ -204,7 +223,8 @@ footer.container-fluid div.footer-nav > a >i{
 
 .owl-carousel.main-carousel img{
 	height: inherit;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 
 
@@ -213,11 +233,11 @@ footer.container-fluid div.footer-nav > a >i{
 }
 
 .owl-carousel.banner-carousel .owl-stage-outer .owl-item{
-    height: 20vh;
+    height: 20vh !important;
 }
 
 .owl-carousel.courses-carousel .owl-stage-outer .owl-item{
-    max-height: 400px;
+    height: 100%;
 }
 
 .owl-carousel.main-carousel .item{
@@ -229,12 +249,15 @@ footer.container-fluid div.footer-nav > a >i{
 .owl-carousel.courses-carousel .item{
 	height: inherit;
   	position: relative;
-	max-height: 400px;
+	/*max-height: 400px;*/
 }
 
 .owl-carousel.courses-carousel img{
 	height: inherit;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	min-height: 400px;
+    max-height: 400px;
 }
 
 .owl-carousel .item .content{
@@ -243,9 +266,15 @@ footer.container-fluid div.footer-nav > a >i{
     color: #fff;
     width: 100%;
     height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .owl-carousel .item .content h1{
@@ -253,7 +282,8 @@ footer.container-fluid div.footer-nav > a >i{
 }
 
 .owl-carousel.courses-carousel  .item .content{
-	max-height: 400px;
+	/*max-height: 400px;*/
+	height: 100%;
 }
 
 
@@ -281,18 +311,22 @@ footer.container-fluid div.footer-nav > a >i{
 	width: 100%;
 	background-color: #006341;
 	opacity: 0.75;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .owl-carousel.courses-carousel .overlay{
 	background-color: #000000;
 	opacity: 0.5;
-	max-height: 400px;
+	/*max-height: 400px;*/
 }
 
 .owl-carousel .overlay > h1{
-	color: #fff;align-self: center;
+	color: #fff;-ms-flex-item-align: center;-ms-grid-row-align: center;align-self: center;
 }
 
 .owl-carousel .owl-nav button.owl-next{
@@ -313,7 +347,8 @@ footer.container-fluid div.footer-nav > a >i{
 
 .btn:focus {
     outline: 0;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .head-banner{
@@ -326,6 +361,10 @@ footer.container-fluid div.footer-nav > a >i{
 /*--- Portfolio Page ---*/
 
 body#portfolio main .jumbotron.head-banner, body#faculty main .jumbotron.head-banner, body#testimonial main .jumbotron.head-banner{
+    
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/slide1.jpg");
+    
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide1.jpg");
     
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slide1.jpg");
 
@@ -344,8 +383,12 @@ body#portfolio .overlay, body#faculty .overlay, body#testimonial .overlay{
 	width: 100%;
 	background-color: #006341;
 	opacity: 0.75;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 body#portfolio .jumbotron .content, body#faculty .jumbotron .content, body#testimonial .jumbotron .content{
@@ -354,9 +397,15 @@ body#portfolio .jumbotron .content, body#faculty .jumbotron .content, body#testi
     color: #fff;
     width: 100%;
     height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     left:0;
 }
 
@@ -392,10 +441,14 @@ body#portfolio figure img.img-fluid{
     max-width:100%;
     width:380px;
     height:inherit;
-    object-fit: cover;
-    object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    cursor: -webkit-zoom-in;
     cursor: zoom-in;  
-    box-shadow: 0px 0px 5px 2px #eee;
+    -webkit-box-shadow: 0px 0px 5px 2px #eee;  
+            box-shadow: 0px 0px 5px 2px #eee;
     border: 1px solid #eee; 
 }
 
@@ -416,7 +469,7 @@ body#portfolio .modal {
 /* Modal Content */
 body#portfolio .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #000;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -465,9 +518,13 @@ body#portfolio .next {
   margin-top: -50px;  
   font-weight: bold;
   font-size: 20px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
 }
 
@@ -488,7 +545,29 @@ body#portfolio .numbertext {
 }
 
 body#portfolio img {
-  margin-bottom: -4px;
+    margin-bottom: -4px;
+}
+
+body#portfolio #myModal img{
+    max-height: 200vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-color: #000;
+}
+
+body#portfolio #gallery img{
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-o-transition: transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body#portfolio #gallery img:hover {
+	opacity: 0.9;
+	-webkit-transform: scale(1.02);
+	    -ms-transform: scale(1.02);
+	        transform: scale(1.02);
 }
 
 body#portfolio .caption-container {
@@ -508,11 +587,14 @@ body#portfolio .demo:hover {
 }
 
 body#portfolio img.hover-shadow {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 body#portfolio .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -528,7 +610,21 @@ body#portfolio .download a{
 
 /*--- Media Queries ---*/
 
+@media (min-width: 320px){
+	nav.navbar > a.navbar-brand > img {
+	    max-height: 45px;
+	}
+
+	.owl-carousel.main-carousel .owl-stage-outer .owl-item {
+	    height: 70vh;
+	}
+}
+
 @media (min-width: 576px){
+
+	footer.container-fluid.cta h3{
+		font-size: 1.75rem;
+	}
 
 	.head-banner{
 		margin-top: 65px;
@@ -554,10 +650,6 @@ body#portfolio .download a{
 @media (min-width: 768px) {
 
 
-	main section.program-highlights .media .highlight-para{
-		/*padding-right: 45% !important;*/
-		line-height: 2.5;
-	}
 	header > nav.navbar #navbarCollapse a.btn{
 	    margin-right: 2%;
 	    margin-left: 6%;
@@ -578,7 +670,7 @@ body#portfolio .download a{
 	    height: 75vh;
 	}
 	.owl-carousel.banner-carousel .owl-stage-outer .owl-item{
-	    height: 25vh;
+	    height: 25vh !important;
 	}
 	body#portfolio figure{
 	    width:380px;
@@ -600,6 +692,13 @@ body#portfolio .download a{
 	main section.video-section > article > iframe{
 		width: 85vw;
 	    height: 50vh;
+	}
+}
+
+@media (min-width: 1200px) {
+	main section.video-section > article > iframe{
+		width: 85vw;
+	    height: 65vh;
 	}
 }
 
