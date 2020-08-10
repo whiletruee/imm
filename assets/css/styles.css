@@ -236,6 +236,14 @@ footer.container-fluid div.footer-nav > a >i{
     height: 20vh !important;
 }
 
+.owl-carousel.banner-carousel .parallax-bg{
+    background: url('../../assets/images/slide1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background-attachment: fixed;
+}
+
 .owl-carousel.courses-carousel .owl-stage-outer .owl-item{
     height: 100%;
 }
